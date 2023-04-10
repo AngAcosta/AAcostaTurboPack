@@ -26,3 +26,7 @@ function GetAll() {
         }
     });
 };
+
+function Clean() {
+    $('#tblEmpleado tbody').empty();
+}
