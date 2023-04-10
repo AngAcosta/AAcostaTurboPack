@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <h2>Usuario</h2>
+    </div>
+    <hr />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/TurboPack/Usuario.js"></script>
+
+    <div>
+        <button type="button" class="btn btn-success" id="btnAdd" onclick="GetAll()">Agregar Usuario</button>
+    </div>
+    <br />
+
+    <div class="row">
+
+        @*//tabla*@
+        <table id="tblEmpleado" class="table table-bordered table-responsive">
+            <thead>
+                <tr>
+
+                    <td class="text-center" style=" font-weight:bold">Nombre</td>
+                    <td class="text-center" style=" font-weight:bold">Genero</td>
+                    <td class="text-center" style=" font-weight:bold">Correo</td>
+                    <td class="text-center" style=" font-weight:bold">Direccio</td>
+                    <td class="text-center" style=" font-weight:bold">Imagen</td>
+
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
